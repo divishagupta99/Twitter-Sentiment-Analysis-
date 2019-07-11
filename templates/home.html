@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<style>
+		body{
+			background-color: #ccffff;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h1 style = "text-align:center; background-color: #0000cc; color: white; ">Sentiment Analysis</h1>
+		
+	</div>
+	</header>
+
+	<img src="../static/images/456.png" alt="Twitter logo" height="600" width="700" style=" float: right;" >
+
+	<div class="ml-container">
+		<form action="{{ url_for('predict')}}" method="POST">
+			<div class = "form group">
+				<label for="hashtag">Enter the keyword</label>
+				<input type="text" name="hashtag" placeholder="keyword"></input>
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+    	table {border-collapse:separate; table-layout:fixed; width:100%;}
+    	table th{
+    		background-color: #4CAF50
+    		color: white;
+    	}
+   		table td {border:solid 1px; width:100%; overflow-wrap: break-word; word-wrap: break-word;}
+		body{
+			background-color: #ccffff;
+		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h1 style = "text-align:center; background-color: #0000cc; color: white; ">Sentiment Analysis</h1>
+		
+	</div>
+	</header>
+	<h3 style = "text-align:center;"> Pictorical Representation</h3>
+	<img src='../static/images/my_plot2.png' alt="bar chart" class = "center">
+	<h3 style = "text-align:center;">Result of Tweets on #{{keyword}}</h3>
+	<div class="resultss">
+	<table class = "table" align = "center">
+	{{data | safe}}
+	</table>
+	</div>
+
+</body>
+</html>

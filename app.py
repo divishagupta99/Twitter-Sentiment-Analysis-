@@ -18,10 +18,10 @@ warnings.filterwarnings("ignore")
 sns.set(font_scale=1.5)
 sns.set_style("whitegrid")
 
-consumer_key= 'j8QZnEO5jA3BBLD5mquFW9zqf'
-consumer_secret= '2FKoIwyxS1aGXSZgxOXWOa3cJRPnp6tmuRmVRpJpYFk8u2c8G2'
-access_token= '924361297478733829-TThjzyzUVcUS5KnGwB5VUxSqc86Qjic'
-access_token_secret= 'G4iOQmT5nYTTIg0R9MYlYFoKE4Rx3KHOsv0Hjy7JDLJ2f'
+consumer_key= '******************'
+consumer_secret= '*****************'
+access_token= '*******************'
+access_token_secret= '********************'
 
 app = Flask(__name__)
 
